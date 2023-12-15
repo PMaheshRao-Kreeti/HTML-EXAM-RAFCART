@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RAFCART</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+  <header>
+    <div class="container header__contact">
+      <select class="header_contact_languages-select">
+        <option value="English">English</option>
+        <option value="Bengali">Bengali</option>
+        <option value="Tamil">Tamil</option>
+      </select>
+      <ul class="header__contact_social-media">
+        <li><a href="#" class="header_contact_social-media_items"><i class="fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#" class="header_contact_social-media_items"><i class="fa-brands fa-twitter"></i></a></li>
+        <li><a href="#" class="header_contact_social-media_items"><i class="fa-brands fa-youtube"></i></a></li>
+        <li><a href="#" class="header_contact_social-media_items"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="#" class="header_contact_social-media_items"><i class="fa-brands fa-tiktok"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="header__horizontal-line"></div>
+    <div class="container-background">
+      <section class="container logo-nav-section">
+        <img src="./assets/logo-white.svg" alt="Website Logo">
+        <div class="logo-nav-section__search">
+          <input type="text" class="logo-nav-section_search_input-field" placeholder="Search our store">
+          <a href="" class="logo-nav-section_search_icon">Search</a>
+        </div>
+        <div class="logo-nav-section__user">
+          <ul class="logo-nav-section_user_options">
+            <li><a href=""><img src="./assets/man_icon.png" alt=""></a></li>
+            <li><a href=""><img src="./assets/shopping_icon.png" alt=""></a></li>
+            <li>
+              <ul>
+                <li class="h6 logo-nav-section_usercart_heading">Your cart</li>
+                <li class="logo-nav-section_usercart_balance"> $9.08</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+    <section class="detail-nav-section__parent">
+      <div class="container detail-nav-section">
+        <aside class="category-offer-section__categories dropdown">
+          <div class="category-offer-section_categories_heading" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+            aria-expanded="false" role="navigation">
+            <span class="pe-2"><i class="fa-solid fa-bars"></i></span>All categories </span>
+          </div>
+          <div class="dropdown-menu category-offer-section_categories_item-list" aria-labelledby="dropdownMenuButton1">
+            <ul class="list-group">
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/living-room.webp"
+                      alt=""></span>Interiror Design</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/handcraft.webp"
+                      alt=""></span>Handcraft</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/sewing-machine.webp"
+                      alt=""></span>Knitting & Sewing</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/stairs.webp" alt=""></span>Garden
+                  Decor</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/home-decor.webp"
+                      alt=""></span>Home Decor</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/gift.webp" alt=""></span>Gift</a>
+              </li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/dress.webp" alt=""></span>Kids &
+                  Babies</a></li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/toys.png" alt=""></span>Toys</a>
+              </li>
+              <li class="list-group-item"><a href="" class="item_a"><span class="pe-5"><img
+                      class="category-offer-sectioncategoriesitem_icon" src="./assets/accessories.png"
+                      alt=""></span>Accessories</a></li>
+              <li class="list-group-item"><a href="" class="item__a">More Categories<span class="ps-5"><i
+                      class="fa-solid fa-plus"></i></span></a></li>
+            </ul>
+          </div>
+        </aside>
+        <nav class="navbar navbar-expand-md navbar-light detail-nav-section__content-nav">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav gap-4">
+                <li class="nav-item">
+                  <a class="nav-link detail-nav-section_content-nav_nav-link" aria-current="page" href="#">Home <span><i
+                        class="fa-solid fa-angle-down"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link detail-nav-section_content-nav_nav-link" href="#">Shop<span><i
+                        class="fa-solid fa-angle-down"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link detail-nav-section_content-nav_nav-link" href="#">Pages<span><i
+                        class="fa-solid fa-angle-down"></i></span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link detail-nav-section_content-nav_nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </section>
+  </header>
+
+  <main>
+
+    <section class="container category-offer-section">
+      <div class="category-offer-section__offers">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <div class="category-offer-section_offers_dots active" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></div>
+            <div class="category-offer-section_offers_dots" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1" aria-label="Slide 2"></div>
+            <div class="category-offer-section_offers_dots" data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2" aria-label="Slide 3"></div>
+          </div>
+          <div class="carousel-inner carausal-inner--height">
+            <section class="carousel-item active">
+              <div class="carousel-item__content">
+                <div class="carousel-item_heading_section">
+                  <span class="h6 carousel-item_headingsection_sub-heading">Get up to 50% off Today only</span>
+                  <h1 class="carousel-item_headingsection_main-heading">Fanideaz Men's Regular Fit Polo T-Shirt</h1>
+                  <button class="carousel-item_headingsection_shop-now">VIEW ALL</button>
+                </div>
+                <div class="carousel-item_content_img">
+                  <img src="./assets/banner.png" alt="person with hand in the pocket">
+                </div>
+              </div>
+            </section>
+            <section class="carousel-item ">
+              <div class="carousel-item__content">
+                <div class="carousel-item_heading_section">
+                  <span class="h6 carousel-item_headingsection_sub-heading">Get up to 50% off Today only</span>
+                  <h1 class="carousel-item_headingsection_main-heading">Fanideaz Men's Regular Fit Polo T-Shirt</h1>
+                  <button class="carousel-item_headingsection_shop-now">VIEW ALL</button>
+                </div>
+                <div class="carousel-item_content_img">
+                  <img src="./assets/banner.png" alt="person with hand in the pocket">
+                </div>
+              </div>
+            </section>
+            <section class="carousel-item ">
+              <div class="carousel-item__content">
+                <div class="carousel-item_heading_section">
+                  <span class="h6 carousel-item_headingsection_sub-heading">Get up to 50% off Today only</span>
+                  <h1 class="carousel-item_headingsection_main-heading">Fanideaz Men's Regular Fit Polo T-Shirt</h1>
+                  <button class="carousel-item_headingsection_shop-now">VIEW ALL</button>
+                </div>
+                <div class="carousel-item_content_img">
+                  <img src="./assets/banner.png" alt="person with hand in the pocket">
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+      <div class="offers">
+        <div class="shoe">
+          <h2> Shoes Collection</h2>
+          <h3>30% OFF</h3>
+          <img src="./assets/shoes-4.png" alt="Shoe image">
+        </div>
+        <div class="glass">
+          <h2> Sunglasses Collection</h2>
+          <h3>20% OFF</h3>
+          <img src="./assets/glass.png" alt="Shoe image">
+        </div>
+      </div>
+
+      <section class="flash-sale container">
+        <h2 class="flash-sale__heading">FLASH SALE</h2>
+        <section class="sale-timer mb-md-4 mb-2">
+          <span class="sale-timer__ending-text">Ending In</span>
+          <span class="sale-timer__time ms-2">00</span>
+          <span class="sale-timer__time ms-2">32</span>
+          <span class="sale-timer__time ms-2">57</span>
+        </section>
+        <section class="flash-sale__carousel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-5">
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/glass.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/glass.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/glass.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/parse.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-5">
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/parse.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/shoes-4.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/parse.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/parse.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row g-5">
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/glass.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/shoes-4.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/parse.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="flash-sale_carousel_img d-flex justify-content-center align-items-center">
+                      <img class="falsh-sale-img" src="assets/shoes-4.png" alt="" />
+                    </div>
+                    <div class="flash-sale_carousel_content d-flex flex-column">
+                      <h4 class="flash-sale_carouselcontent_heading mt-3 mb-1">
+                        WOMEN SCRUB LEATHER
+                      </h4>
+                      <span class="flash-sale_carouselcontent_price">
+                        $45.00
+                      </span>
+                      <div class="flash-sale_carouselcontent_star">
+                        <span class="stars">* * * * *</span>
+                        <span>(150)</span>
+                      </div>
+                      <button class="flash-sale_carouselcontent_button pt-1 pb-1">
+                        <i class="fa-light fa-cart-shopping cart-icon"></i>
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </section>
+      </section>
+  </main>
+
+  <footer>
+    <div class="contact container ">
+      <div class="contact__address">
+        <img src="assets/logo-red.png" alt="RAFCART" class="contact__address--image">
+        <span class="py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum laboriosam maxime ut
+        </span>
+        <span class="contact__heading">NEWSLETTER</span>
+        <div class="input-group mb-3">
+          <input type="text" class="contact__newsletter--input" placeholder="" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button class="contact__newsletter--button" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+      <div class="contact__company">
+        <ul>
+          <li class="contact__heading">MY ACCOUNT</li>
+          <li><a href="#">ORDER</a></li>
+          <li><a href="#">WISHLIST</a></li>
+          <li><a href="#">TRACK ORDER</a></li>
+          <li><a href="#">MANAGE ACCOUNT</a></li>
+          <li><a href="#">RETURN ORDER</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div class="contact__company">
+        <ul>
+          <li class="contact__heading">INFORMATION</li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">RETURN POLICY</a></li>
+          <li><a href="#">TERM & CONDITION</a></li>
+          <li><a href="#">PRIVACY POLICY</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="contact__address">
+        <span class="contact__heading">CONTACT</span>
+        <span><i class="fas fa-home me-3 text-secondary"></i> 3B, Sector 1, Address, city, country</span>
+        <span><i class="fas fa-phone me-3 text-secondary"></i> +123 456 7891, +123 456 7891 </span>
+        <span>
+          <i class="fas fa-envelope me-3 text-secondary"></i>
+          example@example.com
+        </span>
+        <div class="contact__address--icons">
+          <i class='fab fa-facebook'></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-google"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="copyright text-start p-4">
+      <span class="copyright__text ">&#169; RAFCART - All Right Reserved</span>
+    </div>
+  </footer>
+</body>
+
+</html>
